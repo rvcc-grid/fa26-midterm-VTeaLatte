@@ -20,6 +20,7 @@ h2 {
     font-family:"aktiv-grotesk-extended", sans-serif;
     text-transform: uppercase;
     text-align: center;
+    font-size: 200%;
 }
 
 h3, h4, h5, h6 {
@@ -36,13 +37,6 @@ main {
     border-radius:1rem;
 }
 
-/* Header */
-header img {
-    max-width:100%;
-    display:block;
-    margin:0px auto;
-}
-
 /* Hero */
 #hero div {
     padding:1rem;
@@ -50,6 +44,11 @@ header img {
     color:#FFFDF7;
     text-align:center;
     margin-bottom: 2rem;
+}
+#hero img {
+    max-width:100%;
+    display:block;
+    margin:0px auto;
 }
 
 /* Projects */
@@ -64,7 +63,6 @@ header img {
     border:2px solid #050a22;
 }
 #projects h2 {
-    font-size:200%; 
     margin-top: .2rem;
 }
 #projects h3 {
