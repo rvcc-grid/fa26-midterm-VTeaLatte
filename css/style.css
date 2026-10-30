@@ -19,6 +19,7 @@ h1 {
 h2 {
     font-family:"aktiv-grotesk-extended", sans-serif;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h3, h4, h5, h6 {
@@ -29,9 +30,9 @@ h3, h4, h5, h6 {
 main {
     background-color:#FFFDF7;
     padding:1rem;
-    box-shadow:10px 10px 10px rgba(0,0,0,.5);
+    box-shadow:-5px 10px 10px rgba(0,0,0,.5);
     margin-bottom:2rem;
-    border:2px solid #050a22;
+    border:2px solid #fdd3ab;
     border-radius:1rem;
 }
 
@@ -41,6 +42,7 @@ header img {
     display:block;
     margin:0px auto;
 }
+
 /* Hero */
 #hero div {
     padding:1rem;
@@ -55,7 +57,6 @@ header img {
     background-color:#FFFDF7;
     padding:2rem;
 }
-
 #projects img { 
     display:block;
     max-width:100%;
@@ -63,15 +64,12 @@ header img {
     border:2px solid #050a22;
 }
 #projects h2 {
-    text-align:center;
     font-size:200%; 
     margin-top: .2rem;
 }
-
 #projects h3 {
     color: #ea6b17;
 }
-
 #projects p {
     margin-bottom: 3em;
     background-color: #fdd3ab;
@@ -81,11 +79,11 @@ header img {
 #reviews .review {
     display:flex;
     flex-direction: column;
-    border:3px solid #ddd;
     border-radius:1rem;
     padding:2rem;
     margin-bottom:1rem;
-    background-color:#eee;
+    background-color:#fdd3ab;
+    box-shadow:-2px 2px 5px rgba(0,0,0,.5);
 }
 .review .content {
     flex-grow:4;
@@ -95,6 +93,7 @@ header img {
 .review .name {
     font-size:120%;
     font-weight:bold;
+    color: #ea6b17;
 }
 .review .title {
     font-style:italic;
@@ -103,6 +102,7 @@ header img {
 /* Footer */
 footer {
     text-align:center;
+    color: #FFFDF7;
 }
 
 
