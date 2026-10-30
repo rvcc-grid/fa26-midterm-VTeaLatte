@@ -1,17 +1,19 @@
 /* Styles for Mobile Site */
 
 body {
-    background-color:gray;
+    background-color: #5a2215;
     font-family: "recursive-mono-linear-static", sans-serif;
+    color: #050a22;
 }
 
 h1 {
     font-family:"aktiv-grotesk-extended", sans-serif;
     text-transform: uppercase;
-    font-size:400%;
+    font-size:350%;
     letter-spacing:-.03em;
-    margin:1rem;
-    padding:0px;
+    text-align:center;
+    margin: .5em;
+    color: #FFFDF7;
 }
 
 h2 {
@@ -23,49 +25,51 @@ h3, h4, h5, h6 {
     font-family:"aktiv-grotesk-extended", sans-serif;
 }
 
-/* Boxes */
-header,main,footer {
+/* Main Box */
+main {
     background-color:#FFFDF7;
     padding:1rem;
     box-shadow:10px 10px 10px rgba(0,0,0,.5);
     margin-bottom:2rem;
-    border:5px solid #ddd;
+    border:2px solid #050a22;
+    border-radius:1rem;
 }
 
-/* Header & Main */
-header {
-    text-align:center;
-    border-radius: 2rem;
-}
-
-main {
-    border:5px solid #ddd;
-}
-
-/* Hero */
-#hero div {
-    padding:2rem;
-}
-#hero img {
+/* Header */
+header img {
     max-width:100%;
     display:block;
     margin:0px auto;
 }
+/* Hero */
+#hero div {
+    padding:1rem;
+    background-color: #ea6b17;
+    color:#FFFDF7;
+    text-align:center;
+    margin-bottom: 2rem;
+}
 
 /* Projects */
 #projects {
-    background-color: #FFFDF7;
-    padding: 2rem;
+    background-color:#FFFDF7;
+    padding:2rem;
 }
 
 #projects img { 
     display:block;
     max-width:100%;
     margin:0px auto;
+    border:2px solid #050a22;
 }
 #projects h2 {
     text-align:center;
     font-size:200%; 
+    margin-top: .2rem;
+}
+
+#projects h3 {
+    color: #ea6b17;
 }
 
 #projects p {
