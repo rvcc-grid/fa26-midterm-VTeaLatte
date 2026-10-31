@@ -30,25 +30,35 @@ h3, h4, h5, h6 {
 /* Main Box */
 main {
     background-color:#FFFDF7;
-    padding:1rem;
-    box-shadow:-5px 10px 10px rgba(0,0,0,.5);
+    padding:1em;
+    box-shadow:-10px 10px 20px rgba(0,0,0,.5);
     margin-bottom:2rem;
     border:2px solid #fdd3ab;
     border-radius:1rem;
 }
 
 /* Hero */
-#hero div {
-    padding:1rem;
-    background-color: #ea6b17;
-    color:#FFFDF7;
-    text-align:center;
-    margin-bottom: 2rem;
+#hero {
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr .1fr;
+}
+#hero h1{
+    grid-area: 1/1/1/1;
+    z-index: 1;
 }
 #hero img {
     max-width:100%;
-    display:block;
     margin:0px auto;
+    grid-area: 1/1/1/1;
+}
+#hero div {
+    padding:2rem;
+    background-color: #ea6b17;
+    color:#FFFDF7;
+    text-align:center;
+    margin-bottom:2rem;
+    font-size: 90%;
 }
 
 /* Projects */
@@ -79,14 +89,11 @@ main {
     flex-direction: column;
     border-radius:1rem;
     padding:2rem;
+    margin: 1rem;
     margin-bottom:1rem;
     background-color:#fdd3ab;
-    box-shadow:-2px 2px 5px rgba(0,0,0,.5);
-}
-.review .content {
-    flex-grow:4;
-    align-self:center;
-    justify-self: center;
+    box-shadow:-5px 5px 10px rgba(0,0,0,.5);
+
 }
 .review .name {
     font-size:120%;
@@ -113,48 +120,46 @@ footer {
         margin:0 auto;
         padding:2rem;
     }
-    header,main,footer {
-        background-color:white;
-        padding:2.5rem 5rem;
-        box-shadow:10px 10px 10px rgba(0,0,0,.5);
-        margin-bottom:2rem;
+    h2 {
+        font-size: 280%;
+    }
+    main {
+    background-color:#FFFDF7;
+    padding:1em;
+    box-shadow:-10px 10px 20px rgba(0,0,0,.5);
+    margin-bottom:2rem;
+    border:2px solid #fdd3ab;
+    border-radius:1rem;
     }
 
-    /* Head & Hero */
-    #hero {
-        display:flex;
-        justify-content: center;
-        align-items:center;
+    /* Hero */
+    #hero h1{
+        font-size: 500%;
     }
-    #hero img {
-        max-width:20%;
+    #hero div {
+        font-size: 120%;
     }
 
     /* Projects */
     .project {
-        display:flex;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
         margin-bottom:3rem;
     }
     .project div {
         padding:2rem;
     }
     #projects img { 
-        max-width:20%;
+        height: 220px;
     }
 
     /* Reviews */
     #reviews {
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
-        gap:1rem;
     }
     #reviews h2 {
         grid-column: 1/-1;
     }
-    .review * {
-        /*border:1px solid black;*/
-    }
-
-    /* Footer */
-
+    
 }
