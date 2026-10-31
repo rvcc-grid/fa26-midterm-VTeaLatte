@@ -14,6 +14,7 @@ h1 {
     text-align:center;
     margin: .5em;
     color: #FFFDF7;
+    line-height: 1;
 }
 
 h2 {
@@ -21,10 +22,12 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 200%;
+    line-height: 1.2;
 }
 
 h3, h4, h5, h6 {
     font-family:"aktiv-grotesk-extended", sans-serif;
+    line-height: 1.2;
 }
 
 /* Main Box */
